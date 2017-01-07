@@ -1,0 +1,54 @@
+.sugar-container {
+  @include flexbox;
+  @include flex-direction(row);
+  @include flex-wrap(nowrap);
+  @include align-content(stretch);
+  @include justify-content(flex-start);
+  @include align-items(flex-start);
+
+  max-height: 100vh;
+  width: 100%;
+  padding-top: $container-padding-top;
+  background-color: $container-background-color;
+
+}
+.sugar-sidebar-container {
+    align-self: stretch;
+    position: relative;
+    background-color: $sidebar-background-color;
+    overflow: hidden;
+    z-index: 0;
+}
+.sugar-sidebar {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+    overflow: hidden;
+}
+.sugar-sidebar-content {
+    padding: $sidebar-padding;
+}
+
+.sugar-sidebar-overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+    background-image: url($sidebar-image);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: fit;
+
+    z-index: 1;
+
+    opacity: $sidebar-image-opacity;
+}
+
+.sugar-content  {
+  flex: 1;
+  align-self: stretch;
+  background-color: $content-background-color;
+  padding: $content-padding;
+  overflow-y: auto;
+}
