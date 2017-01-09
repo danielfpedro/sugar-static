@@ -1,0 +1,62 @@
+ul.sugar-nav-vertical {
+    list-style: none;
+    padding: $nav-vertical-padding;
+}
+ul.sugar-nav-vertical > li {
+    margin-bottom: $nav-vertical-link-margin-bottom;
+}
+ul.sugar-nav-vertical > li > a {
+    display: block;
+    color: $nav-vertical-font-color;
+    padding: $nav-vertical-link-padding;
+    font-size: $nav-vertical-font-size;
+    text-decoration: none;
+    font-weight: $nav-vertical-font-weight;
+    // text-transform: uppercase;
+}
+.sugar-nav-vertical > li > a > span.fa {
+    font-weight: normal;
+    margin-right: 8px;
+    font-size: 22px
+}
+ul.sugar-nav-vertical > li > a:hover, ul.sugar-nav-vertical > li > a:focus {
+    color: $nav-vertical-hover-font-color;
+    background-color: $nav-vertical-hover-bgcolor;
+    @include border-radius($nav-vertical-hover-border-radius);
+}
+ul.sugar-nav-vertical > li.active {
+    color: $nav-vertical-active-font-color;
+    background-color: $nav-vertical-active-bgcolor;
+    @include border-radius($nav-vertical-hover-border-radius);
+}
+
+// Subnav
+ul.sugar-nav-vertical-submenu {
+    margin-top: $nav-vertical-link-margin-bottom;
+    list-style: none;
+    padding: 0;
+}
+.sugar-nav-vertical-submenu > li {
+    margin-bottom: $nav-vertical-subnav-link-margin-bottom;
+}
+.sugar-nav-vertical-submenu > li > a {
+    display: block;
+    color: $nav-vertical-subnav-font-color;
+    padding: $nav-vertical-subnav-link-padding;
+    font-size: $nav-vertical-subnav-font-size;
+    text-decoration: none;
+}
+ul.sugar-nav-vertical-submenu > li > a:hover, ul.sugar-nav-vertical-submenu > li > a:focus {
+    color: $nav-vertical-subnav-hover-font-color;
+    background-color: $nav-vertical-subnav-hover-bgcolor;
+    @include border-radius($nav-vertical-subnav-hover-border-radius);
+}
+ul.sugar-nav-vertical-submenu > li.active {
+    color: $nav-vertical-active-font-color;
+    background-color: $nav-vertical-active-bgcolor;
+    @include border-radius($nav-vertical-subnav-hover-border-radius);
+}
+
+ul.sugar-nav-vertical-submenu:not(.sugar-nav-vertical-submenu-start-opened) {
+    display: none;
+}

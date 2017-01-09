@@ -1,13 +1,13 @@
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
     .sugar-sidebar {
-        width: 200px;
+        width: $sidebar-sm-width;
     }
 }
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
     .sugar-sidebar {
-        width: 300px;
+        width: $sidebar-width;
     }
 }
 

@@ -1,6 +1,19 @@
-@import "../lib/sass-flex-mixin/_flex";
+// Mixings
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
 
 @import "_variables";
 
+body {
+    font-family: $font-family-primary!important;
+}
+
+@import "../lib/sass-flex-mixin/_flex";
+
 @import "_layout";
 @import "_responsive";
+@import "_nav_vertical";

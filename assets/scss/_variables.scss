@@ -1,13 +1,44 @@
+// General
+$font-family-primary: 'Lato', sans-serif;
+// $font-family-primary: 'Indie Flower', cursive;
 // Container
-$container-background-color: blue;
+$container-background-color: none;
 $container-padding-top: 56px;
 
 // Sidebar
-$sidebar-background-color: orange;
-$sidebar-padding: 10px;
-$sidebar-image: '../../assets/img/bg.jpg';
-$sidebar-image-opacity: .5;
+$sidebar-background-color: white;
+$sidebar-background: linear-gradient(to bottom, #fe8c00 , #f83600);
+$sidebar-width: 250px;
+$sidebar-sm-width: 180px; // Reponsive
+$sidebar-padding: 10px 15px 60px 15px;
+$sidebar-image: '../../assets/img/sidebar-3.jpg';
+$sidebar-image-opacity: .2;
+
+// nav vertical
+$nav-vertical-hover-bgcolor-opacity: .1;
+
+$nav-vertical-padding: 0;
+$nav-vertical-link-margin-bottom: 5px;
+$nav-vertical-font-color: #FFF;
+$nav-vertical-font-weight: bold;
+$nav-vertical-link-padding: 15px;
+$nav-vertical-font-size: 17px;
+$nav-vertical-hover-font-color: #FFF;
+$nav-vertical-hover-bgcolor: rgba(255, 255, 255, $nav-vertical-hover-bgcolor-opacity);
+$nav-vertical-active-font-color: #FFF;
+$nav-vertical-active-bgcolor: rgba(255, 255, 255, ($nav-vertical-hover-bgcolor-opacity + .1));
+$nav-vertical-hover-border-radius: 5px;
+
+$nav-vertical-subnav-link-margin-bottom: $nav-vertical-link-margin-bottom;
+$nav-vertical-subnav-font-color: $nav-vertical-font-color;
+$nav-vertical-subnav-link-padding: 10px 10px 10px 58px;
+$nav-vertical-subnav-font-size: $nav-vertical-font-size - 2;
+$nav-vertical-subnav-hover-font-color: $nav-vertical-hover-font-color;
+$nav-vertical-subnav-hover-bgcolor: $nav-vertical-hover-bgcolor;
+$nav-vertical-subnav-active-font-color: $nav-vertical-active-font-color;
+$nav-vertical-subnav-active-bgcolor: $nav-vertical-active-bgcolor;
+$nav-vertical-subnav-hover-border-radius: $nav-vertical-hover-border-radius;
 
 // Content
-$content-background-color: orange;
-$content-padding: 10px;
+$content-background-color: #E7E7E7;
+$content-padding: 20px 30px;
