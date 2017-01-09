@@ -10,9 +10,10 @@ ul.sugar-nav-vertical > li > a {
     color: $nav-vertical-font-color;
     padding: $nav-vertical-link-padding;
     font-size: $nav-vertical-font-size;
+    text-transform: $nav-vertical-text-tranform;
     text-decoration: none;
     font-weight: $nav-vertical-font-weight;
-    // text-transform: uppercase;
+    letter-spacing: $nav-vertical-letter-spacing;
 }
 .sugar-nav-vertical > li > a > span.fa {
     font-weight: normal;

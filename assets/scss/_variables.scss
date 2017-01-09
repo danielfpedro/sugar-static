@@ -1,6 +1,6 @@
 // General
-$font-family-primary: 'Lato', sans-serif;
-// $font-family-primary: 'Indie Flower', cursive;
+$font-family-primary: 'Muli', sans-serif;
+
 // Container
 $container-background-color: none;
 $container-padding-top: 56px;
@@ -20,9 +20,11 @@ $nav-vertical-hover-bgcolor-opacity: .1;
 $nav-vertical-padding: 0;
 $nav-vertical-link-margin-bottom: 5px;
 $nav-vertical-font-color: #FFF;
-$nav-vertical-font-weight: bold;
 $nav-vertical-link-padding: 15px;
-$nav-vertical-font-size: 17px;
+$nav-vertical-font-size: 14px;
+$nav-vertical-font-weight: bold;
+$nav-vertical-text-tranform: uppercase;
+$nav-vertical-letter-spacing: 0;
 $nav-vertical-hover-font-color: #FFF;
 $nav-vertical-hover-bgcolor: rgba(255, 255, 255, $nav-vertical-hover-bgcolor-opacity);
 $nav-vertical-active-font-color: #FFF;

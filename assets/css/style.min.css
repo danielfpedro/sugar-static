@@ -1,5 +1,5 @@
 body {
-  font-family: "Lato", sans-serif !important; }
+  font-family: "Muli", sans-serif !important; }
 
 .sugar-container {
   display: -webkit-box;
@@ -97,9 +97,11 @@ ul.sugar-nav-vertical > li > a {
   display: block;
   color: #FFF;
   padding: 15px;
-  font-size: 17px;
+  font-size: 14px;
+  text-transform: uppercase;
   text-decoration: none;
-  font-weight: bold; }
+  font-weight: bold;
+  letter-spacing: 0; }
 
 .sugar-nav-vertical > li > a > span.fa {
   font-weight: normal;
@@ -134,7 +136,7 @@ ul.sugar-nav-vertical-submenu {
   display: block;
   color: #FFF;
   padding: 10px 10px 10px 58px;
-  font-size: 15px;
+  font-size: 12px;
   text-decoration: none; }
 
 ul.sugar-nav-vertical-submenu > li > a:hover, ul.sugar-nav-vertical-submenu > li > a:focus {

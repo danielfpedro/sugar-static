@@ -6,9 +6,8 @@
 
     <link rel="stylesheet" href="assets/lib/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/lib/font-awesome/css/font-awesome.min.css">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lato:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700|Montserrat|Muli|Roboto:400,700" rel="stylesheet">
 
-    <link rel="stylesheet" href="assets/css/style.min.css">
     <link rel="stylesheet" href="assets/css/style.min.css">
 
     <link rel="stylesheet" href="assets/lib/optiscroll/dist/optiscroll.css">
