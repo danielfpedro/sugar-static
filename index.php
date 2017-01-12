@@ -114,205 +114,127 @@
         </div>
 
         <div class="sugar-content">
-
-            <div class="">
-                <div class="row">
-                    <div class="col">
-                        <h1>Content</h1>
-                        Breadcrumb Aqui
-                    </div>
-                    <div class="col text-right">
-                        <button type="button" class="btn btn-success">
-                            Adicionar
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <div class="panel">
-                <div class="panel-title">
-                    Pesquisar
-                </div>
-                <div class="panel-body">
-                    <form class="" action="index.html" method="post">
+            <div class="row">
+                <div class="col">
+                    <div class="sugar-header">
                         <div class="row">
                             <div class="col">
-                                <fieldset class="form-group">
-                                    <label for="formGroupExampleInput2">Another label</label>
-                                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-                                </fieldset>
+                                <h1>Adicionar Artigo</h1>
+                                <nav class="breadcrumb">
+                                    <a class="breadcrumb-item" href="#">Artigos</a>
+                                    <span class="breadcrumb-item active">Adicionar artigo</span>
+                                </nav>
                             </div>
-                            <div class="col col-bottom text-right">
-                                <button type="button" class="btn btn-primary">
-                                    Pesquisar
-                                </button>
+                            <div class="col text-right align-self-end">
+                                <button type="button" class="btn btn-primary">Adicionar Artigo</button>
                             </div>
                         </div>
-                    </form>
+                    </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col">
-                    <h1>Table</h1>
-                    <div class="table-responsive">
-                        <table class="table table-striped table-sm table-hover table-bordered" style="background-color: white;">
+                    <div class="sugar-card">
+                        <form class="form" action="index.html" method="post">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="form-group">
+                                        <label for="q">Palavra Chave</label>
+                                        <input type="text" id="q" class="form-control" placeholder="Nome ou Email">
+                                    </div>
+                                </div>
+                                <div class="col-md-3">
+                                    <div class="form-group">
+                                        <label for="status">Status</label>
+                                        <select class="form-control" id="status"/>
+                                            <option value="">Todos</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col text-right align-self-end">
+                                    <div class="form-group">
+                                        <button type="button" class="btn btn-danger">
+                                            <span class="fa fa-search fa-fw"></span> Pesquisar
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div><!-- .card -->
+                </div> <!-- col -->
+            </div> <!-- row -->
+
+            <div class="row">
+                <div class="col">
+                    <div class="sugar-card">
+                        <div class="sugar-pagination-container">
+                            <div class="row">
+                                <div class="col">
+                                    <button type="button" class="btn btn-secondary btn-sm">
+                                        <span class="fa fa-pencil"></span>
+                                    </button>
+                                    <button type="button" class="btn btn-danger btn-sm">
+                                        <span class="fa fa-remove"></span>
+                                    </button>
+                                </div>
+                                <div class="col align-self-center text-right">
+                                    1 - 50 de 200 registros
+                                </div>
+                                <div class="col-md-1 align-self-center">
+                                    <ul class="pagination pagination-sm" style="margin: 0; pading: 0;">
+                                        <li class="page-item">
+                                            <a class="page-link" href="#" tabindex="-1">
+                                                <span class="fa fa-chevron-left"></span>
+                                            </a>
+                                        </li>
+                                        <li class="page-item">
+                                            <a class="page-link" href="#">
+                                                <span class="fa fa-chevron-right"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sugar-card sugar-card-table">
+                        <table class="table table-sm table-hover table-striped">
                             <thead>
                                 <tr>
-                                    <th>Nome</th>
-                                    <th>Cidade</th>
-                                    <th></th>
+                                    <th style="width: 40px;"></th>
+                                    <th>
+                                        Email
+                                    </th>
+                                    <th>
+                                        Nome
+                                    </th>
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr>
-                                    <td>Daniel de Faria Pedro</td>
-                                    <td>Volta Redonda</td>
-                                    <td>
-                                        <button type="button" class="btn btn-default btn-xs">
-                                            <span class="icon icon-pencil"></span>
-                                        </button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>Jonas da Silva</td>
-                                    <td>Volta Redonda</td>
-                                    <td>
-                                        <button type="button" class="btn btn-default btn-xs">
-                                            <span class="icon icon-pencil"></span>
-                                        </button>
-                                    </td>
-                                </tr>
+                                <?php for($i = 0; $i < 20; $i++): ?>
+                                    <tr>
+                                        <td class="text-center">
+                                            <div class="form-check">
+                                                <label class="form-check-label">
+                                                    <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
+                                                </label>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            danielfe@gmail.com
+                                        </td>
+                                        <td>
+                                            Daniel de Faria Pedro
+                                        </td>
+                                    </tr>
+                                <?php endfor; ?>
                             </tbody>
                         </table>
-
-                        <div class="">
-                            <nav>
-                              <ul class="pagination pagination-sm">
-                                <li>
-                                  <a href="#" aria-label="Previous">
-                                    <span aria-hidden="true">&laquo;</span>
-                                    <span class="sr-only">Previous</span>
-                                  </a>
-                                </li>
-                                <li><a href="#">1</a></li>
-                                <li><a href="#">2</a></li>
-                                <li><a href="#">3</a></li>
-                                <li>
-                                  <a href="#" aria-label="Next">
-                                    <span aria-hidden="true">&raquo;</span>
-                                    <span class="sr-only">Next</span>
-                                  </a>
-                                </li>
-                              </ul>
-                            </nav>
-                        </div>
-
-                    </div>
+                    </div> <!-- .card -->
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <h1>Form</h1>
-                    <form>
-                        <fieldset class="form-group">
-                            <label for="nome">Nome</label>
-                            <input type="text" class="form-control" id="nome" placeholder="Nome">
-                        </fieldset>
-                        <fieldset class="form-group">
-                            <label for="email">Email</label>
-                            <input type="text" class="form-control" id="email" placeholder="Email">
-                        </fieldset>
-                        <fieldset class="form-group">
-                            <label for="senha">Senha</label>
-                            <input type="password" class="form-control" id="senha" placeholder="Senha">
-                        </fieldset>
-                        <fieldset class="form-group">
-                            <label for="texto">Texto</label>
-                            <textarea name="texto" id="texto" class="form-control" rows="5" cols="80"></textarea>
-                        </fieldset>
-
-                        <h3>Radio</h3>
-                        <fieldset class="form-group">
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                                Option one is this and that&mdash;be sure to include why it's great
-                                </label>
-                            </div>
-                            <div class="radio">
-                                <label>
-                                    <input type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                                Option two can be something else and selecting it will deselect option one
-                                </label>
-                            </div>
-                            <div class="radio disabled">
-                                <label>
-                                    <input type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
-                                Option three is disabled
-                                </label>
-                            </div>
-                        </fieldset>
-
-                        <h3>Radio Inline</h3>
-
-                        <fieldset class="form-group">
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1"> 1
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2"> 2
-                            </label>
-                            <label class="radio-inline">
-                              <input type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3"> 3
-                            </label>
-                        </fieldset>
-
-                        <h3>Checkbox</h3>
-                        <fieldset class="form-group">
-                            <div class="checkbox">
-                              <label>
-                                <input type="checkbox" value="">
-                                Option one is this and that&mdash;be sure to include why it's great
-                              </label>
-                            </div>
-                            <div class="checkbox disabled">
-                              <label>
-                                <input type="checkbox" value="" disabled>
-                                Option two is disabled
-                              </label>
-                            </div>
-                        </fieldset>
-
-                        <h3>Checkbox Inline</h3>
-                        <fieldset class="form-group">
-                            <label class="checkbox-inline">
-                              <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
-                            </label>
-                            <label class="checkbox-inline">
-                              <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
-                            </label>
-                            <label class="checkbox-inline">
-                              <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
-                            </label>
-                        </fieldset>
-
-                        <fieldset class="form-group">
-                            <button type="button" class="btn btn-primary">
-                                Salvar Alterações
-                            </button>
-                        </fieldset>
-                    </form>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <h1>Custom Checkbox & Radio</h1>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
+        </div> <!-- .sugar-content -->
+    </div><!-- .sugar-container -->
 
     <script src="assets/lib/jquery/dist/jquery.min.js" charset="utf-8"></script>
     <script src="assets/lib/bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>

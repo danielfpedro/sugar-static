@@ -1,5 +1,7 @@
 // General
-$font-family-primary: 'Muli', sans-serif;
+$font-family-primary: 'Roboto', sans-serif;
+$my-gutter: 22px;
+$border-color: #d9d9d9;
 
 // Container
 $container-background-color: none;
@@ -21,7 +23,7 @@ $nav-vertical-padding: 0;
 $nav-vertical-link-margin-bottom: 5px;
 $nav-vertical-font-color: #FFF;
 $nav-vertical-link-padding: 15px;
-$nav-vertical-font-size: 14px;
+$nav-vertical-font-size: 13px;
 $nav-vertical-font-weight: bold;
 $nav-vertical-text-tranform: uppercase;
 $nav-vertical-letter-spacing: 0;
@@ -34,7 +36,7 @@ $nav-vertical-hover-border-radius: 5px;
 $nav-vertical-subnav-link-margin-bottom: $nav-vertical-link-margin-bottom;
 $nav-vertical-subnav-font-color: $nav-vertical-font-color;
 $nav-vertical-subnav-link-padding: 10px 10px 10px 58px;
-$nav-vertical-subnav-font-size: $nav-vertical-font-size - 2;
+$nav-vertical-subnav-font-size: $nav-vertical-font-size + 2;
 $nav-vertical-subnav-hover-font-color: $nav-vertical-hover-font-color;
 $nav-vertical-subnav-hover-bgcolor: $nav-vertical-hover-bgcolor;
 $nav-vertical-subnav-active-font-color: $nav-vertical-active-font-color;
@@ -43,4 +45,4 @@ $nav-vertical-subnav-hover-border-radius: $nav-vertical-hover-border-radius;
 
 // Content
 $content-background-color: #E7E7E7;
-$content-padding: 20px 30px;
+$content-padding: 0;

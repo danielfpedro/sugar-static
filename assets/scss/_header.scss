@@ -1,0 +1,13 @@
+.sugar-header{
+    background-color: #FFF;
+    padding: ($my-gutter / 2) $my-gutter;
+    margin-bottom: $my-gutter;
+}
+.sugar-header > .breadcrumb {
+    background: none;
+    padding: 0;
+    margin: 0;
+}
+.sugar-header > h1 {
+    font-size: 28px;
+}

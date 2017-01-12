@@ -1,0 +1,16 @@
+.sugar-card {
+    margin: $my-gutter;
+    margin-top: 0;
+    background: #FFF;
+    @include border-radius(5px);
+    padding: $my-gutter;
+    border: 1px solid $border-color;
+}
+.sugar-card-table {
+    // Ordem importa
+    padding: 0;
+    padding-top: $my-gutter;
+}
+.sugar-card-table > table > thead > tr > th{
+    border-top: 0;
+}
